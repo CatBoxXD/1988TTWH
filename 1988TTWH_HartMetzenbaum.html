@@ -1,7 +1,7 @@
 e=campaignTrail_temp
 
 function ctsAchievement(achievement, difficultyChecker = true) {
-	if ((difficultyChecker && campaignTrail_temp.difficulty_level_multiplier<=1)||!difficultyChecker)
+	if ((difficultyChecker && campaignTrail_temp.difficulty_level_multiplier<=0.97)||!difficultyChecker)
 		if(campaignTrail_temp.CTS){
 		unlockAchievement(achievement);
 	}
